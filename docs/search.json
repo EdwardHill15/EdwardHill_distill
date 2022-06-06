@@ -6,14 +6,14 @@
       "description": "Selected list of Educational Resources that I've developed.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-06T11:07:32+02:00"
+      "last_modified": "2022-06-06T11:39:25+02:00"
     },
     {
       "path": "blog.html",
       "title": "Blog Posts",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-06T11:07:34+02:00"
+      "last_modified": "2022-06-06T11:39:26+02:00"
     },
     {
       "path": "edu.html",
@@ -21,14 +21,14 @@
       "description": "Selected list of Educational Resources that I've developed.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-06T11:07:36+02:00"
+      "last_modified": "2022-06-06T11:39:28+02:00"
     },
     {
       "path": "index.html",
       "title": "Edward Hillenaar",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          Edward Hillenaar, MSc, candidate PhD\r\n          \r\n          \r\n          Home\r\n          Articles\r\n          Teaching\r\n          Talks\r\n          CV\r\n          Blog\r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Edward Hillenaar\r\n            \r\n            \r\n              \r\n                \r\n                    \r\n                      \r\n                        Website\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Github\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Email\r\n                      \r\n                    \r\n                  \r\n                                  \r\n            \r\n          \r\n        \r\n        \r\n        \r\n          \r\n            \r\n            Bio\r\n            My name is Edward F. Hillenaar and I am the founder and\r\n            CEO of Total Health Foundation. Through a journey in\r\n            different directions, I now walk a path in which my\r\n            knowledge and life experiences are used for therapy and\r\n            counseling to improve the ‘quality of life’.\r\n            My regular ‘scientific’ education consists respectively\r\n            of the Academy of Physical Education and Physiotherapy in\r\n            The Hague (HALO); Sports and Exercise Science at the\r\n            University of Utrecht (“Sports, Exercise and Health”); and\r\n            Clinical-Health Psychology. Combined with my interest in\r\n            Eastern Buddhist psychology and philosophy, all my knowledge\r\n            and experience can be used for my mission within the Total\r\n            Health Foundation.\r\n            My research interests include psychology, philosophy and\r\n            data science of the origin and nature of human\r\n            consciousness.\r\n            \r\n            \r\n            Skills\r\n            I have 4 years of experience with R statistics\r\n            package, especially experienced in Regression Analysis,\r\n            Factor Analysis and Bayesian statistics\r\n            I am a trainer/coach/therapist in my own company;\r\n            Total Health Foundation\r\n            \r\n            \r\n            Experience\r\n            Training/Coaching/Therapy\r\n            Scientific Research\r\n            Psychology/Philosophy\r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Edward Hillenaar\r\n            \r\n            \r\n              \r\n                \r\n                                    \r\n                    \r\n                      Website\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Github\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                                  \r\n              \r\n            \r\n            \r\n              \r\n              Bio\r\n              My name is Edward F. Hillenaar and I am the founder and\r\n              CEO of Total Health Foundation. Through a journey in\r\n              different directions, I now walk a path in which my\r\n              knowledge and life experiences are used for therapy and\r\n              counseling to improve the ‘quality of life’.\r\n              My regular ‘scientific’ education consists respectively\r\n              of the Academy of Physical Education and Physiotherapy in\r\n              The Hague (HALO); Sports and Exercise Science at the\r\n              University of Utrecht (“Sports, Exercise and Health”); and\r\n              Clinical-Health Psychology. Combined with my interest in\r\n              Eastern Buddhist psychology and philosophy, all my\r\n              knowledge and experience can be used for my mission within\r\n              the Total Health Foundation.\r\n              My research interests include psychology, philosophy\r\n              and data science of the origin and nature of human\r\n              consciousness.\r\n              \r\n              \r\n              Skills\r\n              I have 4 years of experience with R statistics\r\n              package, especially experienced in Regression Analysis,\r\n              Factor Analysis and Bayesian statistics\r\n              I am a trainer/coach/therapist in my own company;\r\n              Total Health Foundation\r\n              \r\n              \r\n              Experience\r\n              Training/Coaching/Therapy\r\n              Scientific Research\r\n              Psychology/Philosophy\r\n              \r\n            \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2022-06-06T11:07:37+02:00"
+      "last_modified": "2022-06-06T11:39:29+02:00"
     },
     {
       "path": "talks.html",
@@ -36,7 +36,7 @@
       "description": "Invited Talks.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-06T11:07:38+02:00"
+      "last_modified": "2022-06-06T11:39:30+02:00"
     }
   ],
   "collections": ["posts/posts.json", "edu/edu.json", "talks/talks.json", "articles/articles.json"]
