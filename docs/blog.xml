@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Ted Laderas, PhD</title>
+    <title>Edward Hillenaar, MSc, candidate PhD</title>
     <link>https://laderast.github.io/</link>
     <atom:link href="https://laderast.github.io/blog.xml" rel="self" type="application/rss+xml"/>
-    <description>Website for Ted Laderas, PhD
+    <description>Website for Edward Hillenaar, MSc, candidate PhD
 </description>
     <generator>Distill</generator>
     <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate>

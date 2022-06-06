@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Ted Laderas, PhD</title>
+    <title>Edward Hillenaar, MSc, candidate PhD</title>
     <link>https://laderast.github.io/</link>
     <atom:link href="https://laderast.github.io/articles.xml" rel="self" type="application/rss+xml"/>
-    <description>Website for Ted Laderas, PhD
+    <description>Website for Edward Hillenaar, MSc, candidate PhD
 </description>
     <generator>Distill</generator>
     <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Pumpkins, Pumpkins, Pumpkins (and other veggies)</title>
+      <title>Pumpkins, Pumpkins, Pumpkins</title>
       <dc:creator>Ted Laderas</dc:creator>
       <link>https://laderast.github.io/articles/2021-10-19-great-pumpkins</link>
       <description>Learning about giant pumpkin contest winners.</description>
       <category>tidytuesday</category>
       <guid>https://laderast.github.io/articles/2021-10-19-great-pumpkins</guid>
       <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://laderast.github.io/articles/2021-10-19-great-pumpkins/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Tidy Tuesday: Seafood Production and Consumption</title>
@@ -26,7 +25,6 @@
       <category>tidytuesday</category>
       <guid>https://laderast.github.io/articles/2021-10-12-seafood</guid>
       <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://laderast.github.io/articles/2021-10-12-seafood/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Registered Nurses in the United States and Territories</title>
@@ -36,7 +34,6 @@
       <category>tidytuesday</category>
       <guid>https://laderast.github.io/articles/2021-10-05-registered-nurses</guid>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://laderast.github.io/articles/2021-10-05-registered-nurses/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>How to Network in a Non-slimy Way</title>
@@ -89,7 +86,6 @@
       <category>tidytuesday</category>
       <guid>https://laderast.github.io/articles/2020-07-08_coffee</guid>
       <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://laderast.github.io/articles/2020-07-08_coffee/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Animal Crossing</title>
@@ -99,7 +95,6 @@
       <category>tidytuesday</category>
       <guid>https://laderast.github.io/articles/2020-05-05_animal-crossing</guid>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://laderast.github.io/articles/2020-05-05_animal-crossing/distill-preview.png" medium="image" type="image/png" width="1920" height="576"/>
     </item>
     <item>
       <title>Notes on the RStudio Instructor Training Experience</title>

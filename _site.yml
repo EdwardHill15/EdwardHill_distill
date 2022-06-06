@@ -1,8 +1,8 @@
-name: "Ted Laderas, PhD"
-title: "Ted Laderas, PhD"
+name: "Edward Hillenaar, MSc, candidate PhD"
+title: "Edward Hillenaar, MSc, candidate PhD"
 base_url: https://laderast.github.io/
 description: |
-  Website for Ted Laderas, PhD
+  Website for Edward Hillenaar, MSc, candidate PhD
 exclude: ["README.md", "README.html"]
 theme: theme.css
 output_dir: "docs"

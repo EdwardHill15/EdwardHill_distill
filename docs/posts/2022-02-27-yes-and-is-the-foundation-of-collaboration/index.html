@@ -87,7 +87,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Ted Laderas, PhD: 'Yes, and...' is the foundation of collaboration</title>
+<title>Edward Hillenaar, MSc, candidate PhD: 'Yes, and...' is the foundation of collaboration</title>
 
 <meta property="description" itemprop="description" content="How the rules of comedy improv can improve your collaborations."/>
 
@@ -98,16 +98,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="article:created" itemprop="dateCreated" content="2022-02-27"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ted Laderas, PhD: &#39;Yes, and...&#39; is the foundation of collaboration"/>
+<meta property="og:title" content="Edward Hillenaar, MSc, candidate PhD: &#39;Yes, and...&#39; is the foundation of collaboration"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="How the rules of comedy improv can improve your collaborations."/>
 <meta property="og:url" content="https://laderast.github.io/posts/2022-02-27-yes-and-is-the-foundation-of-collaboration/"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Ted Laderas, PhD"/>
+<meta property="og:site_name" content="Edward Hillenaar, MSc, candidate PhD"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Ted Laderas, PhD: &#39;Yes, and...&#39; is the foundation of collaboration"/>
+<meta property="twitter:title" content="Edward Hillenaar, MSc, candidate PhD: &#39;Yes, and...&#39; is the foundation of collaboration"/>
 <meta property="twitter:description" content="How the rules of comedy improv can improve your collaborations."/>
 <meta property="twitter:url" content="https://laderast.github.io/posts/2022-02-27-yes-and-is-the-foundation-of-collaboration/"/>
 
@@ -1040,10 +1040,6 @@ figure img.external {
   margin-top: 1.5em;
 }
 
-.figure img {
-  width: 100%;
-}
-
 .figure .caption {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
@@ -1873,6 +1869,12 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
+      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+        var fn = $(this).children()[0]
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
         return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1887,6 +1889,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1986,6 +2013,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -2008,7 +2037,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -3455,7 +3484,7 @@ distill-header .nav a {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"'Yes, and...' is the foundation of collaboration","description":"How the rules of comedy improv can improve your collaborations.","authors":[],"publishedDate":"2022-02-27T00:00:00.000-08:00"}
+{"title":"'Yes, and...' is the foundation of collaboration","description":"How the rules of comedy improv can improve your collaborations.","authors":[],"publishedDate":"2022-02-27T00:00:00.000+01:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -3463,7 +3492,7 @@ distill-header .nav a {
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="../../index.html" class="title">Ted Laderas, PhD</a>
+<a href="../../index.html" class="title">Edward Hillenaar, MSc, candidate PhD</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -3706,11 +3735,11 @@ Together</a> has even more information about this.</li>
   <p class="social_footer">
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://twitter.com/share?text=%27Yes%2C%20and...%27%20is%20the%20foundation%20of%20collaboration&amp;url=https%3A%2F%2Fladerast.github.io%2Fposts%2F2022-02-27-yes-and-is-the-foundation-of-collaboration%2F">
-        <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/share?text=%27Yes%2C%20and...%27%20is%20the%20foundation%20of%20collaboration&amp;url=https%3A%2F%2Fladerast.github.io%2Fposts%2F2022-02-27-yes-and-is-the-foundation-of-collaboration%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fladerast.github.io%2Fposts%2F2022-02-27-yes-and-is-the-foundation-of-collaboration%2F&amp;title=%27Yes%2C%20and...%27%20is%20the%20foundation%20of%20collaboration">
-        <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fladerast.github.io%2Fposts%2F2022-02-27-yes-and-is-the-foundation-of-collaboration%2F&amp;title=%27Yes%2C%20and...%27%20is%20the%20foundation%20of%20collaboration" aria-label="share on linkedin">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
       </a>
     </span>
   </p>

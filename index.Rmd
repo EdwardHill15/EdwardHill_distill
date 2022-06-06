@@ -1,20 +1,36 @@
 ---
-title: "Ted Laderas"
-image: "image/ted.jpg"
+title: "Edward Hillenaar"
+image: "image/Ed.jpg"
 links:
-  - label: LinkedIn
-    url: "https://www.linkedin.com/in/ted-laderas-0714a92/"
-  - label: Twitter
-    url: "https://twitter.com/tladeras"
+  - label: Website
+    url: "https://edwardhill15-academic.netlify.app"
+  - label: Github
+    url: "https://www.github.com"
   - label: Email
-    url: "mailto: [tedladeras]@[gmail]dot[com]"
+    url: "mailto: [total-health]@[kpnmail]dot[nl]"
 site: distill::distill_website
 output:
   postcards::trestles
 ---
  
-I am a bioinformatics trainer for DNANexus, formerly an Assistant Professor in Biomedical Informatics at OHSU.
+# Bio
 
-Collaboration, training, and team science are passions of mine. I believe that research should not be lonely, and building communities of practice in science and research that are psychologically safe and inclusive are the key to doing better, more robust science. To this end, I use evidence based pedagogy, especially utilizing the concepts of psychological safety and active learning. I am a certified instructor for both The Carpentries and RStudio.
+My name is Edward F. Hillenaar and I am the founder and CEO of Total Health Foundation. Through a journey in different directions, I now walk a path in which my knowledge and life experiences are used for therapy and counseling to improve the ‘quality of life’.
 
-My free [Ready for R](https://ready4r.netlify.app) course currently is at over 1500 external users, and I have built a learning community around it. The course has been lauded by users as being inclusive and less intimidating than other R courses. Our Data Analytics course recently won an award (Sakai Torchbearer Award) from multiple student nominations.
+My regular ‘scientific’ education consists respectively of the Academy of Physical Education and Physiotherapy in The Hague (HALO); Sports and Exercise Science at the University of Utrecht (“Sports, Exercise and Health”); and Clinical-Health Psychology. Combined with my interest in Eastern Buddhist psychology and philosophy, all my knowledge and experience can be used for my mission within the Total Health Foundation.
+
+My research interests include psychology, philosophy and data science of the origin and nature of human consciousness.
+
+# Skills
+
+- I have 4 years of experience with R statistics package, especially experienced in Regression Analysis, Factor Analysis and Bayesian statistics
+
+- I am a trainer/coach/therapist in my own company; Total Health Foundation
+
+# Experience
+
+- Training/Coaching/Therapy
+
+- Scientific Research
+
+- Psychology/Philosophy
